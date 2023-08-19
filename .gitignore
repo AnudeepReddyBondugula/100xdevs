@@ -1,2 +1,5 @@
 lectures
 lectures/*
+
+node_modules/
+__tests__/
