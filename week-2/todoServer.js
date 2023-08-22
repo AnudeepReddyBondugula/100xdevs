@@ -61,6 +61,11 @@ app.get('/todos', getAllTodosRequestHandler);
 // * gets a specific todo based on ID
 app.get('/todos/:id', getSpecificTodoByIDRequestHandler);
 
+// * HomePage 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+})
+
 
 // ** POST REQUEST ROUTES
 // * Create a new Todo item

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+</head>
+<script>
+    function requestHandler(res){
+        res.json().then(data => console.log(data));
+    }
+
+    function onPress() {
+        fetch("http://localhost:3000/todos", {
+            method: "GET"
+        }).then(requestHandler)
+    }
+</script>
+<body>
+    Todo Title: <input type="text" id="title"></input>
+    <br>
+    Todo Description: <input type="text"></input>
+    <br>
+    <button onclick="onPress()">send Todo</button>
+</body>
+</html>
