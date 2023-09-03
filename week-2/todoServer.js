@@ -41,6 +41,7 @@
  */
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require("cors");
 
 const app = express();
 var todos = []; // * Todos will be stored here
@@ -48,7 +49,9 @@ var counter = 0;
 
 
 // *** MiddleWares
+app.use(cors());
 app.use(bodyParser.json());
+
 
 
 

@@ -1,0 +1,19 @@
+.todo{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 8px;
+}
+
+.main-div{
+  display: flex;
+  justify-items: center;
+  margin-bottom: 25px;
+}
+
+.todos{
+  margin-right: 30px;
+}
+
+input{
+  margin: 2px;
+}
